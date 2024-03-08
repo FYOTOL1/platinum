@@ -40,7 +40,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="lg:container flex items-center flex-row-reverse justify-between mx-auto py-3 px-2 overflow-x-scroll md:overflow-visible">
+      <header className="lg:container flex items-center flex-row-reverse justify-between mx-auto py-3 px-2 overflow-x-scroll overflow-y-visible md:overflow-visible">
         {/* Logo */}
         <img
           className="w-24 sm:w-32 md:w-40 lg:w-56"
