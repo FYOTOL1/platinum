@@ -192,7 +192,7 @@ export default function Header() {
 
             {/* Popup md+ screen */}
             {IsAvatar ? (
-              <div className="hidden sm:block absolute top-[12%] left-[10px] w-[350px] p-3 bg-white shadow-md outline outline-1 outline-gray-100 rounded-xl text-gray-600">
+              <div className="hidden sm:block absolute mt-96 left-[10px] w-[350px] p-3 bg-white shadow-md outline outline-1 outline-gray-100 rounded-xl text-gray-600">
                 <ul className="flex flex-col text-lg text-end">
                   <li
                     className={`w-full py-3 transition-all font-semibold hover:bg-blue-100 hover:text-blue-600 px-4 rounded-lg `}

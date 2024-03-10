@@ -21,7 +21,7 @@ export default function Section_2() {
   return (
     <>
       <div className="relative px-2 lg:px-0 md:container flex justify-between flex-col lg:flex-row-reverse gap-10 mx-auto mt-10 w-full">
-        <div className="Right text-end w-full">
+        <div className="Right text-end w-full lg:w-[75%]">
           <h1 className="text-3xl font-bold text-gray-600">
             جولة ألبوم “مكانك” للفنان عمرو دياب في الاتحاد أرينا في أبوظبي
             <br /> 2024
@@ -34,18 +34,18 @@ export default function Section_2() {
           {/* Location */}
           <div className="flex items-baseline justify-end mt-5 text-blue-400 gap-3">
             <p>الاتحاد ارينا</p>
-            <i class="fa-solid fa-location-dot"></i>
+            <i className="fa-solid fa-location-dot"></i>
           </div>
 
           {/* Rate */}
           <div className="flex items-center flex-row-reverse gap-5 mt-5">
             <p className="bg-green-500 px-2 rounded-sm text-white">4.5</p>
             <div className="flex items-center gap-1 text-yellow-400">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
             </div>
             <p className="underline text-blue-500 cursor-pointer transition-all hover:text-blue-700">
               تقيمات {231}
@@ -65,7 +65,7 @@ export default function Section_2() {
             <p className="absolute bg-yellow-400 p-2 text-xs font-bold top-2 right-2 rounded-full">
               الافضل مبيعا
             </p>
-            <i class="fa-regular fa-heart absolute left-2 top-1 text-2xl text-white"></i>
+            <i className="fa-regular fa-heart absolute left-2 top-1 text-2xl text-white"></i>
           </div>
           <h2 className="mt-3 text-lg font-bold text-gray-600">
             عمرو دياب في مسرح الداننة في البحرين
@@ -142,28 +142,30 @@ export default function Section_2() {
           </ul>
 
           {/* Song */}
-          <hr className="mt-5" />
-          <h1 className="text-xl text-gray-600 font-bold my-3 mt-8">
-            اللاين اب
-          </h1>
-          <div className="flex items-center justify-between flex-row-reverse w-full p-3 lg:p-6 rounded-md">
-            <div className="flex items-center flex-row-reverse gap-5 text-end">
-              <div className="relative w-20 h-20 rounded-md overflow-hidden">
-                <img
-                  className="object-cover h-full w-full"
-                  src="https://cdn.platinumlist.net/upload/artist/amr_diab_27-thumb1706108799.jpeg"
-                  alt="Error"
-                />
-                <i class="fa-solid fa-play absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-[20px] text-gray-50 opacity-75"></i>
+          <div className="block lg:hidden">
+            <hr className="mt-5" />
+            <h1 className="text-xl text-gray-600 font-bold my-3 mt-8">
+              اللاين اب
+            </h1>
+            <div className="flex items-center justify-between flex-row-reverse w-full p-3 lg:p-6 rounded-md">
+              <div className="flex items-center flex-row-reverse gap-5 text-end">
+                <div className="relative w-20 h-20 rounded-md overflow-hidden">
+                  <img
+                    className="object-cover h-full w-full"
+                    src="https://cdn.platinumlist.net/upload/artist/amr_diab_27-thumb1706108799.jpeg"
+                    alt="Error"
+                  />
+                  <i className="fa-solid fa-play absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-[20px] text-gray-50 opacity-75"></i>
+                </div>
+                <div className="">
+                  <p className="text-[100%]">عمرو دياب</p>
+                  <p className="text-xs text-gray-600">الفنان</p>
+                </div>
               </div>
-              <div className="">
-                <p className="text-[100%]">عمرو دياب</p>
-                <p className="text-xs text-gray-600">الفنان</p>
+              <div className="flex items-center gap-3 md:text-2xl lg:text-3xl text-gray-300">
+                <i className="fa-regular fa-heart"></i>
+                <i className="fa-solid fa-chart-simple"></i>
               </div>
-            </div>
-            <div className="flex items-center gap-3 md:text-2xl lg:text-3xl text-gray-300">
-              <i class="fa-regular fa-heart"></i>
-              <i class="fa-solid fa-chart-simple"></i>
             </div>
           </div>
 
@@ -172,7 +174,7 @@ export default function Section_2() {
           <h1 className="text-2xl mt-5 font-bold text-gray-700">الموقع</h1>
           <div className="flex flex-row-reverse gap-10 mt-5 rounded-lg bg-gray-50">
             <div className="flex items-center p-2 lg:py-3 lg:px-1 flex-col text-center text-sm w-[108px] bg-white shadow-md outline outline-1 outline-gray-200 rounded-lg">
-              <i class="fa-solid fa-location-dot flex items-center justify-center mx-auto h-7 w-7 text-white bg-blue-500 rounded-full"></i>
+              <i className="fa-solid fa-location-dot flex items-center justify-center mx-auto h-7 w-7 text-white bg-blue-500 rounded-full"></i>
               <h1 className="text-[13px]">مكان اقامة الفعالية</h1>
               <p className="text-gray-500 text-xs">الموقع</p>
             </div>
@@ -183,21 +185,21 @@ export default function Section_2() {
               </p>
               <div className="flex items-baseline flex-row-reverse gap-2 text-sm text-blue-500">
                 <p>اطلع على الخريطة لمعرفة الاتجاه الصحيح</p>
-                <i class="fa-solid fa-angle-left"></i>
+                <i className="fa-solid fa-angle-left"></i>
               </div>
             </div>
           </div>
           <img className="mt-5 rounded-lg" src="/map.webp" alt="Map Location" />
 
-          {/* Maybe You Like */}
+          {/* Maybe You will Like */}
           <hr className="my-5" />
           <h1 className="text-xl text-gray-600 font-bold my-6">
             قد يعجبك ايضا
           </h1>
           <div className="flex items-center justify-between gap-4 w-full">
-            <div className="relative w-1/2 h-56 shadow-sm ">
+            <div className="relative w-1/2 h-fit">
               <img
-                className="h-full w-full object-cover rounded-lg"
+                className="h-56 w-full object-cover rounded-lg shadow-sm"
                 src="/amr-1.jpg"
                 alt="Error"
               />
@@ -206,7 +208,7 @@ export default function Section_2() {
                 حصري
               </p>
               <p className="absolute left-2 top-1 text-2xl text-white">
-                <i class="fa-regular fa-heart"></i>
+                <i className="fa-regular fa-heart"></i>
               </p>
 
               {/* Info */}
@@ -216,9 +218,9 @@ export default function Section_2() {
               <p className="mt-1 text-md text-gray-600">22.82 USD</p>
               <p className="mt-1 text-base text-gray-400">السبت 22 ابريل</p>
             </div>
-            <div className="relative w-1/2 h-56 shadow-sm">
+            <div className="relative w-1/2 h-fit">
               <img
-                className="h-full w-full object-cover rounded-lg"
+                className="h-56 w-full object-cover rounded-lg shadow-sm"
                 src="/amr-2.jpg"
                 alt="Error"
               />
@@ -227,7 +229,7 @@ export default function Section_2() {
                 حصري
               </p>
               <p className="absolute left-2 top-1 text-2xl text-white">
-                <i class="fa-regular fa-heart"></i>
+                <i className="fa-regular fa-heart"></i>
               </p>
 
               {/* Info */}
@@ -237,6 +239,65 @@ export default function Section_2() {
               <p className="mt-1 text-md text-gray-600">29.82 USD</p>
               <p className="mt-1 text-base text-gray-400">الاحد 15 فبراير</p>
             </div>
+          </div>
+
+          {/* Why We Are The Best */}
+          <h1 className="text-xl text-gray-600 font-bold mt-9 mb-7">
+            ما الذي يميز منصة بلاتينوم لِست عن غيرها؟
+          </h1>
+          <div className="flex items-center justify-between flex-row-reverse flex-wrap gap-5">
+            <div>
+              <i className="fa-solid fa-shield-halved text-3xl text-green-400"></i>
+              <p className="my-1 text-sm font-bold">عملية شراء امنة</p>
+              <p className="text-gray-400 text-xs">دفع سريع وامن</p>
+            </div>
+            <div>
+              <i className="fa-regular fa-credit-card text-3xl text-green-400"></i>
+              <p className="my-1 text-sm font-bold">عملية شراء امنة</p>
+              <p className="text-gray-400 text-xs">دفع سريع وامن</p>
+            </div>
+            <div>
+              <i className="fa-solid fa-ticket text-3xl text-green-400"></i>
+              <p className="my-1 text-sm font-bold">عملية شراء امنة</p>
+              <p className="text-gray-400 text-xs">دفع سريع وامن</p>
+            </div>
+            <div>
+              <i className="fa-solid fa-user-check text-3xl text-green-400"></i>
+              <p className="my-1 text-sm font-bold">عملية شراء امنة</p>
+              <p className="text-gray-400 text-xs">دفع سريع وامن</p>
+            </div>
+          </div>
+
+          {/* Chose Your Best Way To Bay */}
+          <h1 className="text-xl text-gray-600 font-bold mb-8 mt-14">
+            اختار طريقة الدفع المناسبة لك
+          </h1>
+          <div className="flex items-center flex-row-reverse gap-14">
+            <img
+              className="w-10"
+              src="https://cdn.platinumlist.net/dist/v621/img/payment-systems/visa-logo.svg"
+              alt="Visa"
+            />
+            <img
+              className="w-10"
+              src="https://cdn.platinumlist.net/dist/v621/img/payment-systems/mastercard-logo.svg"
+              alt="Visa"
+            />
+            <img
+              className="w-10"
+              src="https://cdn.platinumlist.net/dist/v621/img/payment-systems/american-express.svg"
+              alt="Visa"
+            />
+            <img
+              className="w-10"
+              src="https://cdn.platinumlist.net/dist/v621/img/payment-systems/apple-pay.svg"
+              alt="Visa"
+            />
+            <img
+              className="w-10"
+              src="https://cdn.platinumlist.net/dist/v621/img/payment-systems/mir-logo.svg"
+              alt="Visa"
+            />
           </div>
         </div>
 
@@ -248,11 +309,11 @@ export default function Section_2() {
               <div className="flex items-end lg:items-center justify-between flex-col lg:flex-row-reverse gap-2 lg:gap-0">
                 <div className="flex items-baseline gap-2">
                   <p className="text-gray-500">السبت,مارس 02</p>
-                  <i class="fa-regular fa-calendar-days text-blue-400"></i>
+                  <i className="fa-regular fa-calendar-days text-blue-400"></i>
                 </div>
                 <div className="flex items-baseline gap-2">
                   <p className="text-gray-500">تفتح الابواب 18:00</p>
-                  <i class="fa-regular fa-clock text-blue-400"></i>
+                  <i className="fa-regular fa-clock text-blue-400"></i>
                 </div>
               </div>
               <hr className="my-4" />
@@ -269,7 +330,7 @@ export default function Section_2() {
                     src="https://cdn.platinumlist.net/upload/artist/amr_diab_27-thumb1706108799.jpeg"
                     alt="Error"
                   />
-                  <i class="fa-solid fa-play absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-[20px] text-gray-50 opacity-75"></i>
+                  <i className="fa-solid fa-play absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-[20px] text-gray-50 opacity-75"></i>
                 </div>
                 <div className="">
                   <p className="text-[100%]">عمرو دياب</p>
@@ -277,8 +338,8 @@ export default function Section_2() {
                 </div>
               </div>
               <div className="flex items-center gap-3 md:text-2xl lg:text-3xl text-gray-300">
-                <i class="fa-regular fa-heart"></i>
-                <i class="fa-solid fa-chart-simple hidden lg:block"></i>
+                <i className="fa-regular fa-heart"></i>
+                <i className="fa-solid fa-chart-simple hidden lg:block"></i>
               </div>
             </div>
           </div>
